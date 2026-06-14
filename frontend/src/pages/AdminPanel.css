@@ -1,0 +1,129 @@
+.admin-panel {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.admin-panel h1 {
+  color: #eee;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+/* Tabs */
+.admin-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background-color: #16213e;
+  color: #aaa;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.tab-btn.active {
+  background-color: #e94560;
+  color: white;
+  border-color: #e94560;
+}
+
+.tab-btn:hover:not(.active) {
+  border-color: #e94560;
+  color: #e94560;
+}
+
+/* Stats Grid */
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.admin-stat {
+  background-color: #16213e;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.admin-stat-num {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #e94560;
+}
+
+.admin-stat-label {
+  color: #888;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+/* Table */
+.admin-table-wrapper {
+  background-color: #16213e;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  text-align: left;
+  padding: 10px 12px;
+  color: #888;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.admin-table td {
+  padding: 12px;
+  color: #ccc;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #1a1a3e;
+}
+
+.status-select {
+  padding: 5px 10px;
+  border: 1px solid #2a2a4a;
+  border-radius: 6px;
+  background-color: #0f3460;
+  color: white;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.role-tag {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  text-transform: capitalize;
+}
+
+.role-tag.admin {
+  background-color: rgba(240, 165, 0, 0.2);
+  color: #f0a500;
+}
+
+.role-tag.user {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .admin-tabs {
+    flex-wrap: wrap;
+  }
+}
